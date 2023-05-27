@@ -212,6 +212,13 @@ header {
     display: inline-block;
 }
 
+/* Edit page */
+.img-preview {
+    max-height: 150px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
 /* Footer */
 footer {
     text-align: center;
