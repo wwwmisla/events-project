@@ -5,9 +5,9 @@
 @section('content')
 
     <div id="search-container" class="col-md-12">
-        <h1>Busque um evento</h1>
+        <h1>Busque um Evento</h1>
         <form action="/" method="GET">
-            <input type="text" name="search" id="search" class="form-control" placeholder="Procurar...">
+            <input type="text" name="search" id="search" class="form-control shadow-none" placeholder="Procurar...">
         </form>
     </div>
 
@@ -30,7 +30,7 @@
                         <p class="card-participantes">  Participantes: 
                         {{ count($event->users) }}
                         </p>
-                        <a href="/events/{{ $event->id }}" class="btn btn-primary">Saber mais</a>
+                        <a href="/events/{{ $event->id }}" class="btn btn-primary shadow-none">Saber mais</a>
                     </div>
                 </div>
             @endforeach
