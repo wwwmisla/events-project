@@ -55,7 +55,7 @@
                 <input type="checkbox" name="items[]" value="Brindes"> Brindes
             </div>
         </div>
-        <input type="submit" class="btn btn-primary" value="Editar Evento">
+        <input type="submit" class="btn btn-outline-light" value="Editar Evento">
     </form>
 </div>
 

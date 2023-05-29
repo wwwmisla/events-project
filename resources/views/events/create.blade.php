@@ -53,7 +53,7 @@
                     <input type="checkbox" name="items[]" value="Brindes"> Brindes
                 </div>
             </div>
-            <input type="submit" class="btn btn-primary" value="Criar Evento">
+            <input type="submit" class="btn btn-outline-light" value="Criar Evento">
         </form>
     </div>
 

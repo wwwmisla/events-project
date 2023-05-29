@@ -30,14 +30,15 @@
                         <p class="card-participantes">  Participantes: 
                         {{ count($event->users) }}
                         </p>
-                        <a href="/events/{{ $event->id }}" class="btn btn-primary shadow-none">Saber mais</a>
+                        <a href="/events/{{ $event->id }}" class="btn btn-outline-ligth shadow-none">Saber mais</a>
                     </div>
                 </div>
             @endforeach
             @if(count($events) == 0 && $search)
-                <p>Não foi possível encontrar nenhum evento com {{ $search }}! 
-                </p>
-                <a href="/">Ver todos!</a>
+            <div class="search-error">
+                <p>Não foi possível encontrar nenhum evento com <strong> {{ $search }} </strong>!</p>
+                <a href="/" class="btn btn-primary">Ver eventos disponíveis</a>
+            </div>
             @elseif(count($events) == 0)
                 <p>Não há eventos disponíveis.</p>
             @endif

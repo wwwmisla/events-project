@@ -22,7 +22,7 @@
                     <form action="/events/join/{{ $event->id }}" method="POST">
                         @csrf
                         <a href="/events/join/{{ $event->id }}" 
-                            class="btn btn-primary" 
+                            class="btn btn-outline-ligth shadow-none" 
                             id="event-submit"
                             onclick="event.preventDefault();
                             this.closest('form').submit();">

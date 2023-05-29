@@ -29,15 +29,15 @@
                         {{ count($event->users) }}
                     </td>
                     <td>
-                        <a href="/events/edit/{{ $event->id }}" class="btn btn-info edit-btn">
-                            <ion-icon name="create-outline"></ion-icon> 
+                        <a href="/events/edit/{{ $event->id }}" id="edit-btn" class="btn btn-outline-light edit-btn">
+                            <ion-icon name="create" class="action-icon"></ion-icon> 
                             Editar
                         </a> 
                         <form action="/events/{{ $event->id }}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger delete-btn">
-                                <ion-icon name="trash-outline"></ion-icon> 
+                            <button type="submit" class="btn btn-outline-light delete-btn">
+                                <ion-icon name="trash" class="action-icon"></ion-icon> 
                                 Deletar
                             </button>
                         </form>
@@ -76,11 +76,10 @@
                         @csrf
                         @method('DELETE')
 
-                        <button type="submit" class="btn btn-danger delete-btn">
-                            <ion-icon name="trash-outline"></ion-icon>
+                        <button type="submit" class="btn btn-outline-light delete-btn">
+                            <ion-icon name="trash" class="action-icon"></ion-icon>
                             Sair do Evento
                         </button>
-
                     </form>
                 </td>
             </tr>
