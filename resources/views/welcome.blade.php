@@ -20,16 +20,14 @@
         @endif
         <div id="cards-container" class="row">
             @foreach ($events as $event)
-                <div class="card col-md-3">
-                    <img src="/img/events/{{ $event->image }} " alt="{{ $event->title }}">
+                <div class="card">
+                        <img src="/img/events/{{ $event->image }}" class="card-img-top" alt="{{ $event->title }}">
                     <div class="card-body">
                         <p class="card-date">
-                        {{ date('d/m/Y', strtotime($event->date)) }}   
+                            {{ date('d/m/Y', strtotime($event->date)) }}   
                         </p>
-                        <h5 class="card-title">{{ $event->title}}</h5>
-                        <p class="card-participantes">  Participantes: 
-                        {{ count($event->users) }}
-                        </p>
+                        <h5 class="card-title">{{ $event->title }}</h5>
+                        <p class="card-participantes">Participantes: {{ count($event->users) }}</p>
                         <a href="/events/{{ $event->id }}" class="btn btn-outline-ligth shadow-none">Saber mais</a>
                     </div>
                 </div>
@@ -37,7 +35,7 @@
             @if(count($events) == 0 && $search)
             <div class="search-error">
                 <p>Não foi possível encontrar nenhum evento com <strong> {{ $search }} </strong>!</p>
-                <a href="/" class="btn btn-primary">Ver eventos disponíveis</a>
+                <a href="/" class="btn btn-outline-light">Ver eventos disponíveis</a>
             </div>
             @elseif(count($events) == 0)
                 <p>Não há eventos disponíveis.</p>

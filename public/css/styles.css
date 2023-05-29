@@ -188,7 +188,6 @@ nav {
 /* Events list */
 #events-container {
     padding: 50px;
-    /* flex-wrap: wrap; */
 }
 
 #events-container h2 {
@@ -203,24 +202,24 @@ nav {
 
 #cards-container {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
 }
 
 #events-container .card {
-    /* flex-wrap: wrap; */
-    flex: 1 1 24%;
-    max-width: 25%;
-    border-radius: 10px;
+    width: 250px;
+    border-radius: 15px;
     padding: 0;
-    margin: .5%;
     background-color: var(--dark4);
     box-shadow: 2px 2px 1px 1px var(--dark3);
 }
 
 #events-container img {
-    max-height: 150px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    width: 248px;
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 #events-container p {
@@ -242,7 +241,7 @@ nav {
 .card-participantes {
     font-size: 14px;
     color: var(--white);
-}
+} 
 
 /* Events create page */
 #event-create-container {
@@ -324,6 +323,7 @@ nav {
 #description-container {
     margin-top: 30px;
     margin-bottom: 30px;
+    text-align: justify;
 }
 
 /* Dashboard */
